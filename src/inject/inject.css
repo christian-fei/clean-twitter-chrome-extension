@@ -1,0 +1,44 @@
+/**
+ * Place your custom CSS styles here.
+ **/
+
+nav [href="/explore"],
+nav [href="/i/bookmarks"],
+nav [href*="/lists"],
+header [data-testid="SideNav_AccountSwitcher_Button"],
+[role="banner"] [role="heading"],
+[role="navigation"] [dir="auto"],
+[href="/compose/tweet"],
+[data-testid="sidebarColumn"],
+[data-testid="primaryColumn"] > div > div:nth-child(1) {
+  display: none !important;
+}
+[role="banner"] > div {
+  width: 69px !important;
+}
+
+nav a {
+  margin-top: 1em !important;
+  margin-bottom: 1em !important;
+}
+
+@media all and (min-width: 1280px) {
+  [role="main"] {
+    padding-left: 200px !important;
+  }
+}
+
+[role="banner"] > div > div > div, [aria-label="Primary"], [role="navigation"] a {
+  width: 59px !important;
+}
+
+[aria-label^="Timeline"] > div > div > div {
+  padding-top: 2em !important;
+  padding-bottom: 2em !important;
+}
+[aria-label^="Timeline"] > div > div > div > div,
+[data-testid="primaryColumn"],
+[id="layers"] {
+  border: none !important;
+}
+
